@@ -1,8 +1,8 @@
 /* global test expect, describe */
 
-const chdirApp = () => process.chdir('test/test_app')
-const chdirCwd = () => process.chdir(process.cwd())
-chdirApp()
+const { chdirTestApp, chdirCwd } = require('../utils/helpers')
+
+chdirTestApp()
 
 const config = require('../config')
 
